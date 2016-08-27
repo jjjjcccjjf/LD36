@@ -45,6 +45,7 @@
     <object>objects\obj_lifeform_parent</object>
     <object>objects\obj_enemy_parent</object>
     <object>objects\obj_player_stats</object>
+    <object>objects\obj_battle</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_one</room>

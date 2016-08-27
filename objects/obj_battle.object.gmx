@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,17 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Camera stuff
-//Moves towards the player when not in battle
+            <string>///Draw the battle GUI
 
-if(instance_exists(obj_battle)){
-    x += (obj_battle.x - x ) * .1;
-    y += (obj_battle.y - y ) * .1;
-}
-else{
-    x += (obj_player.x - x ) * .1;
-    y += (obj_player.y - y ) * .1;
-}
+
+draw_text(32, room_height - 64, "Battle start");
+draw_text(32, room_height - 44, "Attack");
+draw_text(32, room_height - 24, "Defend");
+draw_text(32, room_height - 4, "Run");
 </string>
           </argument>
         </arguments>
